@@ -1,17 +1,14 @@
-# Release_test
-Spaces-version(1.0.0)
 # Spaces
 
-Spaces is a keyboard-first, Electron + Vite overlay for organizing and quickly launching links, local files, and small notes grouped into "Spaces". It focuses on speed and minimal distraction with keyboard navigation, quick creation, and a clean glassmorphism UI.
+A fast, lightweight overlay for keeping all your links, files, and quick notes organized in one place. Press a hotkey, organize by topic into "Spaces," and access everything with just your keyboard. No clutter, no distractions—just quick access to what matters.
 
 ## Features
-- Create and manage named Spaces to group links, files, and notes
-- Quick global hotkey to open the overlay (configurable)
-- Keyboard-first navigation and item management (arrows, Enter, Delete)
-- Add items by pasting URLs, typing notes, or attaching local files
-- Global `@all` search across all Spaces
-- Recycle Bin for soft-deleted Spaces
-- Lightweight persistent storage using `electron-store`
+- Organize links, files, and notes into named Spaces
+- Open with a global hotkey (customizable)
+- Fast keyboard navigation—arrow keys to browse, Enter to open
+- Paste a URL or type a note and it's saved instantly
+- Search across all your Spaces in one place
+- Trash bin for deleted Spaces (recoverable)
 
 ## Quick Start (dev)
 Requirements:
@@ -73,15 +70,8 @@ Spaces and deleted spaces are persisted using `electron-store` (see `electron/ma
 - For Electron changes, ensure IPC handlers are secure and context-isolation is enabled.
 
 ## Troubleshooting
-- If hotkey doesn't register, check global shortcut conflicts on your OS and update the hotkey in Settings or from `electron-store` defaults.
-- If file dialogs or path operations fail, confirm the app has necessary permissions and the path exists.
+- If hotkey doesn't register, check global shortcut conflicts on your OS and update the hotkey in Settings.
+- If file dialogs fail, confirm the app has necessary permissions.
 
 ## License
-Include a license file if you plan to open-source this project. By default, none is provided in this repo.
-
----
-
-If you want, I can:
-- Add this README to the repo (I already created it at `README.md`).
-- Add example screenshots and a short GIF of the overlay in use.
-- Add packaging specifics for macOS / Linux.
+Include a license file if you plan to open-source this project.
